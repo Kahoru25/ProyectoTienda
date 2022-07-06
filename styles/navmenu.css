@@ -336,12 +336,13 @@ a.sub-list-menu {
 
 .footer-main{
     color: azure;
-    margin-top: 100px;
+    
     border-top: solid #a1a0ea 1px;
     height: 190px;
 }
 
 .title-footer h1{
+    
     text-align: center;
     margin-top: 20px;
     font-weight: 500;
