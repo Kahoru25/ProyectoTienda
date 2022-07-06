@@ -2,8 +2,6 @@
     display: flex;
 }
 
-
-
 /* servicios */
 
 .services-section{
@@ -111,57 +109,4 @@ li{
     
 }
 
-/* Footer */
 
-.footer-main{
-    color: azure;
-    margin-top: 100px;
-    border-top: solid #a1a0ea 1px;
-    height: 190px;
-}
-
-.title-footer h1{
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 60px;
-    text-shadow: #a1a0ea 5px 5px 15px;
-}
-
-.social-logo{
-    color: white;
-    text-align: center;
-    display: flex;
-    width: 500px;
-    margin: auto;
-}
-
-.bubble-icon{
-    
-    color: #a1a0ea;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin: auto;
-    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-    transition: 0.3s ease-in-out, transform 0.3s ease-in-out; 
-}
-
-.bubble-icon:hover {
-    transform: scale(2);
-}
-
-.bubble-icon:hover{
-    
-    color: #ffffff;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.social-logo i{
-    position: relative;
-    top: 10px;
-}

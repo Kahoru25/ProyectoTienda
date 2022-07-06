@@ -100,7 +100,7 @@ body.body-main {
     height: 100vh;
     width: 70px;
     background: var(--color-principal);
-    box-shadow: 10px 0 0 var(--color-fondo);
+    box-shadow: 10px 0 0 var(--color-fondo); /*Border derecho*/
     border-left: 10px solid var(--color-principal);
     /*borde iz*/
     overflow-x: hidden;
@@ -160,7 +160,7 @@ body.body-main {
     right: 0;
     width: 30px;
     height: 30px;
-    background: var(--color-principal);
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/
     border-radius: 50%;
     box-shadow: 15px 15px 0 var(--color-fondo);
 }
@@ -172,11 +172,38 @@ body.body-main {
     right: 0;
     width: 30px;
     height: 30px;
-    background: var(--color-principal);
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/
     border-radius: 50%;
     box-shadow: 15px -15px 0 var(--color-fondo);
-
 }
+
+/* Solo para los submenus-------------------- de nada sirve xd*/
+
+.navigation-container ul li.active-for-sub a::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/
+    border-radius: 50%;
+    
+}
+
+.navigation-container ul li.active-for-sub a::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/
+    border-radius: 50%;
+    
+}
+
+
 
 
 .navigation-container ul li a.icon {
@@ -234,26 +261,26 @@ body.body-main {
 .menu-item:hover::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 30.9px;
     right: 0;
     width: 50px;
     height: 30px;
-    background: var(--color-principal);
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/;
     border-radius: 50%;
     box-shadow: 15px 15px 0 var(--color-fondo);
 
 }
 
-.menu-item:hover:after {
+.menu-item:hover:after {   /*falta corregir redondeo de esquinar inferiores*/
     content: "";
     position: absolute;
     bottom: -30px;
     right: 0;
     width: 30px;
     height: 30px;
-    background: var(--color-principal);
-    border-radius: 50%;
-    box-shadow: 15px -15px 0 var(--color-fondo);
+    background: rgba(255, 255, 255, 0); /*color de bordeado exterior al fondo*/
+    border-radius: 50%; 
+    box-shadow: 20px -10px 0 var(--color-fondo);
 }
 
 .menu-item__sub a::before {
@@ -297,7 +324,65 @@ a.sub-list-menu {
     font-family: 'Poppins', sans-serif;
     line-height: 5px;
 }
+.menu-item__sub a.active-sub{
+    background: #18182c;
+    border-radius: 0 15px 15px 0;
+}
 
 
+/* Footer */
 
+/* Footer */
 
+.footer-main{
+    color: azure;
+    margin-top: 100px;
+    border-top: solid #a1a0ea 1px;
+    height: 190px;
+}
+
+.title-footer h1{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 60px;
+    text-shadow: #a1a0ea 5px 5px 15px;
+}
+
+.social-logo{
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 500px;
+    margin: auto;
+}
+
+.bubble-icon{
+    
+    color: #a1a0ea;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.bubble-icon:hover {
+    transform: scale(2);
+}
+
+.bubble-icon:hover{
+    
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.social-logo i{
+    position: relative;
+    top: 10px;
+}
