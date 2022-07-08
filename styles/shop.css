@@ -168,14 +168,15 @@ position: relative;
     position: absolute;
     right: 0;
     top: -35%;
-    width: 130px;
-    background: rgba(0, 0, 0, 0.514);
+    width: 120px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.164);
     padding: 13px 15px;
     display: flex;
 }
 
 .cart-nav .icon{
-    color: #ff7979;
+    color: #fdfdfd;
 }
 
 .cart-nav .icon i{
@@ -184,23 +185,26 @@ position: relative;
 
 .cart-nav .icon span{
     font-weight: 500;
+    font-size: 15px;
 }
 
 .cart-nav .item-count{
     font-size: 15px;
+    margin-left: 10px;
     height: 23px;
     width: 23px;
-    color: #ff7979;
-    background: #ffcccc;
+    color: #000000;
+    background: #ffffff;
     text-align: center;
     line-height: 22px;
-    border: 1px solid #ffb3b3;
+    /* border: 1px solid #ffb3b3; */
     border-radius: 50%;
 }
 
-.wrapper .card{
+.wrapper .card{   /* borde y color de la tarjeta del producto */
     position: relative;
-    background: #5e5d95;
+    background: #0c0c0c;
+    border: white solid 1px;
     border-radius: 10px;
     width: calc(33% - 13px);
     overflow: hidden;
@@ -248,7 +252,7 @@ transform: scale(1.1);
 }
 
 .content-card .row .price{
-    color: #ff7979;
+    color: #5e5d95;  /* precio tarjeta*/
     font-size: 25px;
     font-weight: 600;
 }
@@ -270,23 +274,23 @@ transform: scale(1.1);
 }
 
 .buttons button:first-child{
-    color: #ff7979;
+    color: #5e5d95;
     margin-right:10px ;
     background: #fff;
 }
 
 button:first-child:hover{
     color: #fff;
-    background: #ff7979;
+    background: #5e5d95;
 }
 
 .buttons button:last-child{
     color: #fff;
     margin-left: 10px;
-    background: #ff7979;
+    background: #5e5d95;
 }
 
 button:last-child:hover{
-    background: #ff6666;
-    border-color: #ff6666;
+    background: #454472;
+    border-color: #454472;
 }

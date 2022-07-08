@@ -6,7 +6,7 @@ function activeLink(){
 }
 
 list.forEach((item)=>
-item.addEventListener('click', activeLink2));
+item.addEventListener('click', activeLink));
 
 const list2 = document.querySelectorAll(".list2");
 function activeLink2(){
