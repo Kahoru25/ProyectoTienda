@@ -37,24 +37,33 @@ body.body-main {
     min-height: 100vh;
 }
 
+
 .logo-master{
+    display: none;
+    z-index: 999;
     position: sticky;
+    float:right;
+    width: 1000px;
+    /* border:  greenyellow solid; */
     top: 0;
-    right: 0;
-    margin-bottom: 20px;
-    height: 150px;
-    margin-left: 20px;
-    float: right;
+    right: 100px;
+    border: yellow solid;
     overflow: hidden;
+
+
 }
 
 .bandera-master-logo{
     background: #242441;
+    position: relative;
+    /* border: yellow solid; */
     width: 200px;
     height: 100px;
     transform: rotate(45deg);
     margin-top: -20px;
-    margin-right: -70px;
+    margin-right: 100px;
+    right: 130px;
+    /* overflow: hidden; */
     
 }
 

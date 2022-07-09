@@ -1,6 +1,11 @@
-.carousel {
+.content-carrousel{
     display: flex;
+    top: 0;
+    margin-top: 0;
+    /* border: green solid; */
+    height: auto;
 }
+
 
 /* servicios */
 
@@ -90,16 +95,18 @@ li{
 }
 
 .info {
+    display: flex;
     position: absolute;
     width: inherit;
     height: inherit;
+
 }
 
 .info h3 {
     color: #fff;
-    font-size: 42px;
-    margin: 0 30px;
-    padding: 100px 0 0 0;
+    font-size: 48px;
+    margin: auto;
+
     line-height: 1.5;
     
 }

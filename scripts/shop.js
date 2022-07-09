@@ -61,7 +61,7 @@ $('.cart-btn').on("click", function(){
             "top": cart.offset().top + 20,
             "left": cart.offset().left + 30,
             "width": 75,
-            "heigth": 75
+            "heigth": 75,
         }, 1000, "easeInOutExpo");
 
         setTimeout(function(){
